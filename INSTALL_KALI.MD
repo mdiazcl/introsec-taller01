@@ -3,9 +3,6 @@ Lo primero que debemos hacer es instalar Kali linux para el taller. Para ello te
 
 Personalmente no recomiendo usar la OVA ya que viene con demasiadas opciones por defecto, aparte que la experiencia de instalar una máquina virtual también es importante como parte del proceso de aprendizaje.
 
-Si estas muy complicado, la puedes descargar desde aquí:
-
-
 ## Paso 1: Descargar lo necesario.
 El virtualizador VirtualBox (ninguna preferencia en particular):
 * **[Descargar VirtualBox](https://www.virtualbox.org/wiki/Downloads)**: Seleciona la opción que te sirva, Windows, OSx u Linux.
@@ -25,7 +22,7 @@ Hacer click en Nueva (Botón celeste) y elegir un nombre para la máquina. En Ti
 
 ![](images/tipo_vbox.png)
 
-Elige cuanta RAM puedes disponibe, ojalá coloca 8GB, pero si tu PC no tiene tanta RAM disponible usa como mínimo 2GB, yo utilizaré 4GB. **Una nota importante!, para este taller necesitamos virtualizar otra máquina, asi que no gastes toda tu RAM en Kali.**
+Elige cuanta RAM quieres dejarle disponibe, ojalá coloca 8GB, pero si tu PC no tiene tanta RAM disponible usa como mínimo 2GB, yo utilizaré 4GB. **Una nota importante!, para este taller necesitamos virtualizar otra máquina, asi que no gastes toda tu RAM en Kali.**
 
 ![](images/ram_vbox.PNG)
 
