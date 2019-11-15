@@ -1,5 +1,5 @@
 # Metasploitable
-Metasploitable es una máquina virtual que está diseñada para recibir ataques. Tiene programas vulnerables y muchas -malas configuraciones- a propósito para que puedas probara tus habilidades. Si bien está en internet la documentación de cómo atacarla será utilizada para enseñar algunas técnicas en el taller.
+Metasploitable es una máquina virtual que está diseñada para recibir ataques. Tiene programas vulnerables y muchas -malas configuraciones- a propósito para que puedas probar tus habilidades. Si bien está en internet la documentación de cómo atacarla será utilizada para enseñar algunas técnicas en el taller.
 
 Para este taller usaremos la máquina Metasploitable versión 2 (ya que la 3 ocupa otra tecnológia y complicaría de sobremanera el taller).
 
@@ -44,7 +44,7 @@ Al igual que en en la máquina virtual de Kali, vamos a especificar que la tarje
 
 ![](images/config_metasploitable.png)
 
-Ir a la **Opcion Red > (tab) Adaptador 1** y seleccionamos la opción ``Red Interna`` y dejaremos el nombre como ``intnet``.
+Ir a la **Opcion Red > (tab) Adaptador 1** y selecionaremos la opción ``Red NAT`` y seleccionamos "RedLab". (Si no te aparece, revisa la guía de [Guía de creación de red laboratorio](CREAR_LABNET.MD)).
 
 ![](images/eth0_metasploitable.PNG)
 
@@ -58,32 +58,12 @@ En este punto tenemos que logear en la máquina. Usa las siguientes credenciales
 * **Usuario:** msfadmin
 * **Password:** msfadmin
 
-Como esta sera nuestra máquina objetivo, necesitamos asignarle una dirección IP dentro de nuestra LAN. Para ello le pondremos una dirección IP estática y así usarla como objetivo posterior. Esta dirección debes ANOTARLA.
-
-Para establecer una dirección IP estática sigue los siguientes pasos. Usaré nano por la simplicidad, pero siéntete libre de usar VIM.
+Como esta sera nuestra máquina objetivo, saber que dirección IP nos asignó vía DHCP. Para ello lanzaremos el comando ``ifconfig`` y anotaremos la dirección IP en alguna parte.
 
 ```bash
-sudo nano /etc/network/interfaces
-```
-
-![](images/ifconfig_metasploitable.PNG)
-
-Dentro de este archivo, necesitamos editar desde la línea ``iface eth0 inet dhcp`` hacia abajo, reemplazandolo por lo siguiente:
-
-```bash
-iface eth0 inet static
-address 10.0.0.30
-netmask 255.255.255.0
-network 10.0.0.0
-broadcst 10.0.0.255
-dns-nameservers 8.8.8.8
-```
-
-Presionar ``CTRL + X`` y guardar los cambios. Ahora que establecimos la dirección estática, necesitamos reiniciar el adaptador de red.
-```bash
-sudo /etc/init.d/networking restart
+ifconfig
 ```
 
 ![](images/ifconfig_ready_metasploitable.PNG)
 
-Con esto la máquina queda lista para el laboratorio!
+En este caso asignó la dirección **10.0.30.4**, sin embargo es aleatorio. Anótala que servirá despues! Con esto la máquina queda lista para el laboratorio!

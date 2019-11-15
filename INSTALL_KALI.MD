@@ -63,7 +63,7 @@ Con eso, al momento de iniciar la máquina virtual, iniciará el proceso de inst
 ## Paso 5: Configurar la red
 Para este laboratorio, usaremos la red interna de Virtualbox para la comunicación de las máquinas. Sin embargo, la máquina de Kali Linux necesita acceso a internet también (para poder descargar algunos paquetes en caso de ser necesario). Para ello, colocaremos dos tarjetas de red, una en formato NAT (para que tenga acceso a internet), y otra tarjeta con acceso a la red interna de VirtualBox llamada ``intnet``. Esta red solo puede ser visualizada por las máquinas virtuales, de esta forma protegeremos nuestro laboratorio de intrusos no deseados.
 
-Para esto, ir a la sección **Opción Red**. El ``Adaptador 1`` lo dejaremos tal cual está. Iremos al segundo adaptador (``Adaptador 2``). Selecionaremos la opción ``Red Interna`` y dejaremos el nombre como ``intnet``.
+Para esto, ir a la sección **Opción Red**. El ``Adaptador 1`` lo dejaremos tal cual está. Iremos al segundo adaptador (``Adaptador 2``). Selecionaremos la opción ``Red NAT`` y seleccionamos "RedLab". (Si no te aparece, revisa la guía de [Guía de creación de red laboratorio](CREAR_LABNET.MD)).
 
 ![](images/net_vbox.png)
 
