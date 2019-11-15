@@ -18,4 +18,12 @@ La arquitectura de red para este laboratorio es la siguiente:
 
 ![](images/network_map.PNG)
 
+Ambas máquinas deberan ser visibles entre ellas!
+En el caso de esta guía quedaron con las siguientes direcciones IP:
+
+* **Kali Linux:** 10.0.30.5
+* **Metasploitable v2:** 10.0.30.4
+
+![](images/connect_machines.PNG)
+
 Asegurandonos de seguir ambas guias al pie de la letra podremos tener nuestro laboratorio listo y preparado!
