@@ -111,7 +111,7 @@ Cuando la instalación pregunta sobre el **Package manager** selecionar la ``Yes
 
 Cuando llegue ese punto asegurate de selecionar el ``/dev/sda`` (disco duro principal), tal como muestra la foto.
 
-![](images/sda_grub_kali.png)
+![](images/sda_grub_kali.PNG)
 
 Con esto finalizará la instalación de Kali Linux, seleciona **Continue**. Se reiniciará la máquina y tendremos disponible el sistema operativo!
 
@@ -129,7 +129,7 @@ echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/
 apt update
 ```
 
-![](images/repo_kali.PNG)
+![](images/repo_guest.PNG)
 
 Ahora, actualizaremos el repo e instalaremos lo necesario y reiniciaremos el Pc. Durante esta instalación te preguntará una serie de cosas, deja las opciones por defecto, con eso deberia bastar.
 
